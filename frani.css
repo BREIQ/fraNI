@@ -1,0 +1,333 @@
+@charset "utf-8";
+/* CSS Document - Frani 1.0 - September 2020
+
+/* 1-General */
+/* 1.1-Window */
+*{
+	height:auto;
+	margin:0px;
+	padding:0px;
+	border:none;
+	outline:none;
+	outline-width:0px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	background:none;
+}
+html,body{
+	overflow-x:hidden !important;
+	overflow-y:auto;
+}
+/* 1.2-Responsive Objects */
+/* 1.2.1-All Sizes Properties */
+.lg, .md, .sm{
+	display:none !important;
+}
+._lg, ._md, ._sm{
+	display: block !important;
+}
+/* 1.2.2-Large Objects */
+@media(min-width:1200px){
+	.lg{
+		display:block !important;
+	}
+	.lg.inline{
+		display:inline !important;
+		float: none;
+	}
+	.lg.inline-block{
+		display:inline-block !important;
+		float: none;
+	}
+	._lg{
+		display: none !important;
+	}
+}
+/* 1.2.3-Medium Objects */
+@media(min-width: 768px) and (max-width: 1199px){
+	.md{
+		display:block !important;
+	}
+	.md.inline{
+		display:inline !important;
+		float: none;
+	}
+	.md.inline-block{
+		display:inline-block !important;
+		float: none;
+	}
+	._md{
+		display: none !important;
+	}
+}
+/* 1.2.4-Small Objects */
+@media(max-width: 767px){
+	.sm{
+		display:block !important;
+	}
+	.sm.inline{
+		display:inline !important;
+		float: none;
+	}
+	.sm.inline-block{
+		display:inline-block !important;
+		float: none;
+	}
+	._sm{
+		display: none !important;
+	}
+}
+
+/* 2-Grid */
+/* 2.1-Containers */
+.frani{
+	margin-right:auto;
+	margin-left:auto;
+}
+@media(min-width: 1800px){
+	.frani{
+		width:1800px;
+	}
+}
+.line{
+	clear:both;
+	overflow-y:auto;
+}
+
+/* 2.2-Cells */
+/* 2.2.1-Cells Global Propierties */
+.line [class*="lg"], .line [class*="md"], .line [class*="sm"]{
+	position:relative;
+	min-height:1px;
+	float:left;
+	display: none !important;
+}
+/* 2.2.2-Large Cells */
+@media(min-width: 1200px){
+	.line [class*="lg"]{
+		display: block !important;
+	}
+	.line [class*="1lg"]{
+		width:8.33333333%;
+	}
+	.line [class*="2lg"]{
+		width:16.66666666%;
+	}
+	.line [class*="3lg"]{
+		width:25%;
+	}
+	.line [class*="4lg"]{
+		width:33.33333333%;
+	}
+	.line [class*="5lg"]{
+		width:41.66666666%;
+	}
+	.line [class*="6lg"]{
+		width:50%;
+	}
+	.line [class*="7lg"]{
+		width:58.33333333%;
+	}
+	.line [class*="8lg"]{
+		width:66.66666666%;
+	}
+	.line [class*="9lg"]{
+		width:75%;
+	}
+	.line [class*="10lg"]{
+		width:83.33333333%;
+	}
+	.line [class*="11lg"]{
+		width:91.66666666%;
+	}
+	.line [class*="12lg"]{
+		width:100%;
+	}
+/* 2.2.4-Large Cells Spaces */
+	.line [class*="lg-1"]{
+		margin-left:8.33333333%;
+	}
+	.line [class*="lg-2"]{
+		margin-left:16.66666666%;
+	}
+	.line [class*="lg-3"]{
+		margin-left:25%;
+	}
+	.line [class*="lg-4"]{
+		margin-left:33.33333333%;
+	}
+	.line [class*="lg-5"]{
+		margin-left:41.66666666%;
+	}
+	.line [class*="lg-6"]{
+		margin-left:50%;
+	}
+	.line [class*="lg-7"]{
+		margin-left:58.33333333%;
+	}
+	.line [class*="lg-8"]{
+		margin-left:66.66666666%;
+	}
+	.line [class*="lg-9"]{
+		margin-left:75%;
+	}
+	.line [class*="lg-10"]{
+		margin-left:83.33333333%;
+	}
+	.line [class*="lg-11"]{
+		margin-left:91.66666666%;
+	}
+}
+/* 2.2.4-Medium Cells */
+@media(min-width: 768px) and (max-width: 1199px){
+	.line [class*="md"]{
+		display: block !important;
+	}
+	.line [class*="1md"]{
+		width:8.33333333%;
+	}
+	.line [class*="2md"]{
+		width:16.66666666%;
+	}
+	.line [class*="3md"]{
+		width:25%;
+	}
+	.line [class*="4md"]{
+		width:33.33333333%;
+	}
+	.line [class*="5md"]{
+		width:41.66666666%;
+	}
+	.line [class*="6md"]{
+		width:50%;
+	}
+	.line [class*="7md"]{
+		width:58.33333333%;
+	}
+	.line [class*="8md"]{
+		width:66.66666666%;
+	}
+	.line [class*="9md"]{
+		width:75%;
+	}
+	.line [class*="10md"]{
+		width:83.33333333%;
+	}
+	.line [class*="11md"]{
+		width:91.66666666%;
+	}
+	.line [class*="12md"]{
+		width:100%;
+	}
+/* 2.2.5-Medium Cells Spaces */
+	.line [class*="md-1"]{
+		margin-left:8.33333333%;
+	}
+	.line [class*="md-2"]{
+		margin-left:16.66666666%;
+	}
+	.line [class*="md-3"]{
+		margin-left:25%;
+	}
+	.line [class*="md-4"]{
+		margin-left:33.33333333%;
+	}
+	.line [class*="md-5"]{
+		margin-left:41.66666666%;
+	}
+	.line [class*="md-6"]{
+		margin-left:50%;
+	}
+	.line [class*="md-7"]{
+		margin-left:58.33333333%;
+	}
+	.line [class*="md-8"]{
+		margin-left:66.66666666%;
+	}
+	.line [class*="md-9"]{
+		margin-left:75%;
+	}
+	.line [class*="md-11"]{
+		margin-left:83.33333333%;
+	}
+	.line [class*="md-12"]{
+		margin-left:91.66666666%;
+	}
+}
+/* 2.2.6-Small Cells */
+@media(max-width: 767px){
+	.line [class*="sm"]{
+		display: block !important;
+	}
+	.line [class*="1sm"]{
+		width:8.33333333%;
+	}
+	.line [class*="2sm"]{
+		width:16.66666666%;
+	}
+	.line [class*="3sm"]{
+		width:25%;
+	}
+	.line [class*="4sm"]{
+		width:33.33333333%;
+	}
+	.line [class*="5sm"]{
+		width:41.66666666%;
+	}
+	.line [class*="6sm"]{
+		width:50%;
+	}
+	.line [class*="7sm"]{
+		width:58.33333333%;
+	}
+	.line [class*="8sm"]{
+		width:66.66666666%;
+	}
+	.line [class*="9sm"]{
+		width:75%;
+	}
+	.line [class*="10sm"]{
+		width:83.33333333%;
+	}
+	.line [class*="11sm"]{
+		width:91.66666666%;
+	}
+	.line [class*="12sm"]{
+		width:100%;
+	}
+/* 2.2.5-Small Cells Spaces */
+	.line [class*="sm-1"]{
+		margin-left:8.33333333%;
+	}
+	.line [class*="sm-2"]{
+		margin-left:16.66666666%;
+	}
+	.line [class*="sm-3"]{
+		margin-left:25%;
+	}
+	.line [class*="sm-4"]{
+		margin-left:33.33333333%;
+	}
+	.line [class*="sm-5"]{
+		margin-left:41.66666666%;
+	}
+	.line [class*="sm-6"]{
+		margin-left:50%;
+	}
+	.line [class*="sm-7"]{
+		margin-left:58.33333333%;
+	}
+	.line [class*="sm-8"]{
+		margin-left:66.66666666%;
+	}
+	.line [class*="sm-9"]{
+		margin-left:75%;
+	}
+	.line [class*="sm-10"]{
+		margin-left:83.33333333%;
+	}
+	.line [class*="sm-11"]{
+		margin-left:91.66666666%;
+	}
+}

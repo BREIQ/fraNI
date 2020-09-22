@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document - Frani Parameters */
+
+/* Index
+1-Media Queries
+    1.1-Orientation
+        1.1.1-Display Landscape Position
+        1.1.2-Display Portrait Position
+    1.2-Display Sizes
+        1.2.1-Display Large Size
+        1.2.2-Display Medium Size
+        1.2.3-Display Small Size
+    1.3-Orientation Landscape and Display Sizes
+        1.3.1-Display Landscape Position and Large Size
+        1.3.2-Display Landscape Position and Mediun Size
+        1.3.3-Display Landscape Position and Small Size
+    1.4-Orientation Portrait and Display Sizes
+        1.4.1-Display Portrait Position and Large Size
+        1.4.2-Display Portrait Position and Medium Size
+        1.4.3-Display Portrait Position and Small Size */
+
+
+/* 1-Media Queries */
+/* 1.1-Orientation */
+/* 1.1.1-Display Landscape Position */
+@media(orientation: landscape){
+}
+/* 1.1.2-Display Portrait Position */
+@media(orientation: portrait){
+}
+/* 1.2-Display Sizes */
+/* 1.2.1-Display Large Size */
+@media(min-width: 1200px){
+}
+/* 1.2.2-Display Medium Size */
+@media(min-width: 768px) and (max-width: 1199px){
+}
+/* 1.2.3-Display Small Size */
+@media(max-width: 767px) {
+}
+/* 1.3-Orientation Landscape and Display Sizes */
+/* 1.3.1-Display Landscape Position and Large Size */
+@media(orientation: landscape) and (min-width: 1200px){
+}
+/* 1.3.2-Display Landscape Position and Mediun Size */
+@media(orientation: landscape) and (min-width: 768px) and (max-width: 1199px){
+}
+/* 1.3.3-Display Landscape Position and Small Size */
+@media(orientation: landscape) and (max-width: 767px){
+}
+/* 1.4-Orientation Portrait and Display Sizes */
+/* 1.4.1-Display Portrait Position and Large Size */
+@media(orientation: portrait) and (min-width: 1200px){
+}
+/* 1.4.2-Display Portrait Position and Medium Size */
+@media(orientation: portrait) and (min-width: 768px) and (max-width: 1199px){
+}
+/* 1.4.3-Display Portrait Position and Small Size */
+@media(orientation: portrait) and (max-width: 767px){
+}

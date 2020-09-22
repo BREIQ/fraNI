@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document - Frani Format 0.5 (Alpha) - August 2019
+
+/* 1-Containers, Cells & Boxes */
+/* 1.1-Border Space */
+.padding{
+	padding: 10px;
+}
+.padding-y{
+	padding: 10px 0;
+}
+.padding-x{
+	padding: 0 10px;
+}
+/* 1.2-Line, Cells Same Height */
+.line.flex{
+    display: -webkit-box;
+    display: -webkit-flex;
+	display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* 2-Inline */
+/* 2.1-Text Align */
+.align-center{
+    text-align: center;
+}
+.align-justify{
+    text-align: justify;
+}
+.align-left{
+    text-align: left;
+}
+.align-right{
+    text-align: right;
+}
+/* 2.1-Text Format */
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+/* 2.2-Link format */
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
