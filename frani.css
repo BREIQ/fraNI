@@ -19,7 +19,7 @@ html,body{
 	overflow-x:hidden !important;
 	overflow-y:auto;
 }
-/* 1.2-Responsive Objects */
+/* 1.2-Objects */
 /* 1.2.1-All Sizes Properties */
 .lg, .md, .sm{
 	display:none !important;
