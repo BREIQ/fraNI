@@ -19,66 +19,6 @@ html,body{
 	overflow-x:hidden !important;
 	overflow-y:auto;
 }
-/* 1.2-Objects */
-/* 1.2.1-All Sizes Properties */
-.lg, .md, .sm{
-	display:none !important;
-}
-._lg, ._md, ._sm{
-	display: block !important;
-}
-/* 1.2.2-Large Objects */
-@media(min-width:1200px){
-	.lg{
-		display:block !important;
-	}
-	.lg.inline{
-		display:inline !important;
-		float: none;
-	}
-	.lg.inline-block{
-		display:inline-block !important;
-		float: none;
-	}
-	._lg{
-		display: none !important;
-	}
-}
-/* 1.2.3-Medium Objects */
-@media(min-width: 768px) and (max-width: 1199px){
-	.md{
-		display:block !important;
-	}
-	.md.inline{
-		display:inline !important;
-		float: none;
-	}
-	.md.inline-block{
-		display:inline-block !important;
-		float: none;
-	}
-	._md{
-		display: none !important;
-	}
-}
-/* 1.2.4-Small Objects */
-@media(max-width: 767px){
-	.sm{
-		display:block !important;
-	}
-	.sm.inline{
-		display:inline !important;
-		float: none;
-	}
-	.sm.inline-block{
-		display:inline-block !important;
-		float: none;
-	}
-	._sm{
-		display: none !important;
-	}
-}
-
 /* 2-Grid */
 /* 2.1-Containers */
 .frani{
