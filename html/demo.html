@@ -1,0 +1,218 @@
+<!DOCTYPE HTML><html>
+<head>
+<title>fraNI</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="" />
+<style>
+html, body{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+html{
+    background-color: #333;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23676767' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+header{
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid #555;
+    background-color: #222;
+}
+iframe{
+    height: calc(100% - 200px) !important;
+    max-width: 1200px;
+    width: calc(100% - 20px) !important;
+    margin: 20px auto 20px auto;
+    border: 25px solid #222;
+    border-radius: 25px;
+    overflow: hidden !important;
+    background-color: #EEE;
+}
+iframe.sm{
+    max-width: 767px !important;
+}
+iframe.md{
+    min-width: 768px;
+    max-width: 999px !important;
+}
+iframe.lg{
+    min-width: 1200px !important;
+}
+header div{
+    display: inline-block;
+}
+label,select,button{
+    display: block;
+    margin: 8px;
+    background-color: #DDD;
+    color: #111;
+    width: 90px;
+    padding: 3px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+label{
+    background-color: #333;
+    margin: 0 8px 8px 8px;
+    border-radius: 0 0 5px 5px;
+    color: #FFF;
+}
+button{
+    cursor: pointer;
+    background: #778fd1;
+}
+</style>
+</head>
+<body>
+    <header>
+<!--Large-->
+        <div>
+            <label>Large</label>
+            <select id="lg">
+                <option value="1lg">Size 1</option>
+                <option value="2lg">Size 2</option>
+                <option value="3lg">Size 3</option>
+                <option value="4lg">Size 4</option>
+                <option value="5lg">Size 5</option>
+                <option value="6lg">Size 6</option>
+                <option value="7lg">Size 7</option>
+                <option value="8lg">Size 8</option>
+                <option value="9lg">Size 9</option>
+                <option value="10lg">Size 10</option>
+                <option value="11lg">Size 11</option>
+                <option value="12lg">Size 12</option>
+            </select>
+            <select id="lgs">
+                <option value="">No Space</option>
+                <option value="-1">Space 1</option>
+                <option value="-2">Space 2</option>
+                <option value="-3">Space 3</option>
+                <option value="-4">Space 4</option>
+                <option value="-5">Space 5</option>
+                <option value="-6">Space 6</option>
+                <option value="-7">Space 7</option>
+                <option value="-8">Space 8</option>
+                <option value="-9">Space 9</option>
+                <option value="-10">Space 10</option>
+                <option value="-11">Space 11</option>
+            </select>
+        </div>
+        <div>
+<!--Medium-->
+            <label>Medium</label>
+            <select id="md">
+                <option value="1md">Size 1</option>
+                <option value="2md">Size 2</option>
+                <option value="3md">Size 3</option>
+                <option value="4md">Size 4</option>
+                <option value="5md">Size 5</option>
+                <option value="6md">Size 6</option>
+                <option value="7md">Size 7</option>
+                <option value="8md">Size 8</option>
+                <option value="9md">Size 9</option>
+                <option value="10md">Size 10</option>
+                <option value="11md">Size 11</option>
+                <option value="12md">Size 12</option>
+            </select>
+            <select id="mds">
+                <option value="">No Space</option>
+                <option value="-1">Space 1</option>
+                <option value="-2">Space 2</option>
+                <option value="-3">Space 3</option>
+                <option value="-4">Space 4</option>
+                <option value="-5">Space 5</option>
+                <option value="-6">Space 6</option>
+                <option value="-7">Space 7</option>
+                <option value="-8">Space 8</option>
+                <option value="-9">Space 9</option>
+                <option value="-10">Space 10</option>
+                <option value="-11">Space 11</option>
+            </select>
+        </div>
+        <div>
+<!--Small-->
+            <label>Small</label>
+            <select id="sm">
+                <option value="1sm">Size 1</option>
+                <option value="2sm">Size 2</option>
+                <option value="3sm">Size 3</option>
+                <option value="4sm">Size 4</option>
+                <option value="5sm">Size 5</option>
+                <option value="6sm">Size 6</option>
+                <option value="7sm">Size 7</option>
+                <option value="8sm">Size 8</option>
+                <option value="9sm">Size 9</option>
+                <option value="10sm">Size 10</option>
+                <option value="11sm">Size 11</option>
+                <option value="12sm">Size 12</option>
+            </select>
+            <select id="sms">
+                <option value="">No Space</option>
+                <option value="-1">Space 1</option>
+                <option value="-2">Space 2</option>
+                <option value="-3">Space 3</option>
+                <option value="-4">Space 4</option>
+                <option value="-5">Space 5</option>
+                <option value="-6">Space 6</option>
+                <option value="-7">Space 7</option>
+                <option value="-8">Space 8</option>
+                <option value="-9">Space 9</option>
+                <option value="-10">Space 10</option>
+                <option value="-11">Space 11</option>
+            </select>
+        </div>
+        <div>
+            <label>Screen</label>
+            <select id="ss">
+                <option value="lg">Large</option>
+                <option value="md">Medium</option>
+                <option value="sm">Small</option>
+            </select>
+            <button> Test</button>
+        </div>
+    </header>
+    <iframe src="/frame.html" title="Demo"></iframe>
+    <script>
+        
+        function exe(){
+            iframe = document.getElementsByTagName("iframe")[0];
+            ss = document.getElementsByTagName("select")[6].value;
+            console.log(ss);
+            iframe.className= ss;
+            iframe.className= ss;
+            w = iframe.offsetWidth;
+            h = iframe.offsetHeight;
+            lg = document.getElementsByTagName("select")[0].value;
+            lgs = document.getElementsByTagName("select")[1].value;
+            md = document.getElementsByTagName("select")[2].value;
+            mds = document.getElementsByTagName("select")[3].value;
+            sm = document.getElementsByTagName("select")[4].value;
+            sms = document.getElementsByTagName("select")[5].value;
+            value = lg + lgs + ' ' + md + mds + ' ' + sm + sms;
+            iframe.contentWindow.document.getElementById("cell").className= value;
+            if(w < 768){
+                size = "Small";
+            }else if(w < 1200){
+                size = "Medium";
+            }else{
+                size = "Large";
+            }
+            iframe.contentWindow.document.getElementById("textbox").innerHTML = '<b>Screen size: </b>' + size + ' <b>Value classes:</b> class="' + value + '"';
+            console.log('Screen size ' + size + ' ' + w + 'px witdh x ' + h + 'px height');
+            
+        }
+        window.addEventListener('load', function() {
+            exe();
+        });
+        document.getElementsByTagName("button")[0].addEventListener('click', function() {
+            exe();
+        });
+        
+
+    </script>
+</body>
+</html>
