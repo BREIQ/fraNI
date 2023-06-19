@@ -66,7 +66,7 @@ label{
 </head>
 <body>
     <header>
-<!--Large-->
+<!--Large options-->
         <div>
             <label>Large</label>
             <select>
@@ -99,7 +99,7 @@ label{
             </select>
         </div>
         <div>
-<!--Medium-->
+<!--Medium options-->
             <label>Medium</label>
             <select>
                 <option value="1md">Size 1</option>
@@ -131,7 +131,7 @@ label{
             </select>
         </div>
         <div>
-<!--Small-->
+<!--Small options-->
             <label>Small</label>
             <select>
                 <option value="1sm">Size 1</option>
@@ -162,6 +162,7 @@ label{
                 <option value="-11">Space 11</option>
             </select>
         </div>
+<!--Screen size option-->
         <div>
             <label>Screen</label>
             <select>
@@ -171,35 +172,27 @@ label{
             </select>
         </div>
     </header>
+<!--iFrame-->
     <iframe src="/frame.html" title="Demo"></iframe>
     <script>
 //Variables
         const iframe = document.getElementsByTagName("iframe")[0]; //Get iframe object
-        const large = document.getElementsByTagName("select")[0]; //Get large option object
-        const largeSpace = document.getElementsByTagName("select")[1]; //Get large space option object
-        const medium = document.getElementsByTagName("select")[2]; //Get medium option object
-        const mediumSpace = document.getElementsByTagName("select")[3]; //Get medium space option object
-        const small = document.getElementsByTagName("select")[4]; //Get small option object
-        const smallSpace = document.getElementsByTagName("select")[5]; //Get small space option object
-        const screenSize = document.getElementsByTagName("select")[6]; //Get screen size option object
-        const options = document.querySelectorAll("select"); //Get all options objects
+        const options = document.querySelectorAll("select"); //Get all options objects    
+        const lg = options[0]; //Get large option object
+        const lgs = options[1]; //Get large space option object
+        const md = options[2]; //Get medium option object
+        const mds = options[3]; //Get medium space option object
+        const sm = options[4]; //Get small option object
+        const sms = options[5]; //Get small space option object
+        const ss = options[6]; //Get screen size option object
         const cell = document.getElementById("cell"); //Get cell object
         const textbox = document.getElementById("textbox"); //Get textbox object
-
         function exe(){
-            ss = screenSize.value; //Get value from option screen size
-            iframe.className= ss; //iFrame size by class value
-            lg = large.value; //Get value from option large 
-            lgs = largeSpace.value; //Get value from option large space
-            md = medium.value; //Get value from option medium
-            mds = mediumSpace.value; //Get value from option medium space
-            sm = small.value; //Get value from option small
-            sms = smallSpace.value; //Get value from option small space
-            val = lg + lgs + ' ' + md + mds + ' ' + sm + sms; //Class value for cell -- val 1
-            val2 = '<b>Screen size: </b>' + ss + ' <b>Value classes:</b> class="' + val + '"'; //Value of text to print on textbox -- val 2
-            iframe.contentWindow.cell.className= val; //Insert val 1
-            iframe.contentWindow.textbox.innerHTML = val2; //Insert val 2
-            
+            iframe.className= ss.value; //iFrame size by class value
+            val_0 = lg.value + lgs.value + ' ' + md.value + mds.value + ' ' + sm.value + sms.value; //Class value for cell
+            val_1 = '<b>Screen size: </b>' + ss.value + ' <b>Value classes:</b> class="' + val_0 + '"'; //Value of text to print on textbox
+            iframe.contentWindow.cell.className= val_0; //Insert val 0
+            iframe.contentWindow.textbox.innerHTML = val_1; //Insert val 1
         };
 //Events
         window.addEventListener('load', function() { //Execute function when load page
@@ -208,8 +201,6 @@ label{
         options.forEach(elem => elem.addEventListener('change', function() { //Execute function when change option value
             exe();
         }));
-        
-
     </script>
 </body>
 </html>
