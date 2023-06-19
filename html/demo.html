@@ -32,20 +32,21 @@ iframe{
     overflow: hidden !important;
     background-color: #EEE;
 }
-iframe.sm{
+iframe.small{
     max-width: 767px !important;
 }
-iframe.md{
+iframe.medium{
     min-width: 768px;
     max-width: 999px !important;
 }
-iframe.lg{
+iframe.large{
     min-width: 1200px !important;
 }
 header div{
     display: inline-block;
+    vertical-align: top;
 }
-label,select,button{
+label,select{
     display: block;
     margin: 8px;
     background-color: #DDD;
@@ -61,10 +62,6 @@ label{
     border-radius: 0 0 5px 5px;
     color: #FFF;
 }
-button{
-    cursor: pointer;
-    background: #778fd1;
-}
 </style>
 </head>
 <body>
@@ -72,7 +69,7 @@ button{
 <!--Large-->
         <div>
             <label>Large</label>
-            <select id="lg">
+            <select>
                 <option value="1lg">Size 1</option>
                 <option value="2lg">Size 2</option>
                 <option value="3lg">Size 3</option>
@@ -86,7 +83,7 @@ button{
                 <option value="11lg">Size 11</option>
                 <option value="12lg">Size 12</option>
             </select>
-            <select id="lgs">
+            <select>
                 <option value="">No Space</option>
                 <option value="-1">Space 1</option>
                 <option value="-2">Space 2</option>
@@ -104,7 +101,7 @@ button{
         <div>
 <!--Medium-->
             <label>Medium</label>
-            <select id="md">
+            <select>
                 <option value="1md">Size 1</option>
                 <option value="2md">Size 2</option>
                 <option value="3md">Size 3</option>
@@ -118,7 +115,7 @@ button{
                 <option value="11md">Size 11</option>
                 <option value="12md">Size 12</option>
             </select>
-            <select id="mds">
+            <select>
                 <option value="">No Space</option>
                 <option value="-1">Space 1</option>
                 <option value="-2">Space 2</option>
@@ -136,7 +133,7 @@ button{
         <div>
 <!--Small-->
             <label>Small</label>
-            <select id="sm">
+            <select>
                 <option value="1sm">Size 1</option>
                 <option value="2sm">Size 2</option>
                 <option value="3sm">Size 3</option>
@@ -150,7 +147,7 @@ button{
                 <option value="11sm">Size 11</option>
                 <option value="12sm">Size 12</option>
             </select>
-            <select id="sms">
+            <select>
                 <option value="">No Space</option>
                 <option value="-1">Space 1</option>
                 <option value="-2">Space 2</option>
@@ -167,50 +164,50 @@ button{
         </div>
         <div>
             <label>Screen</label>
-            <select id="ss">
-                <option value="lg">Large</option>
-                <option value="md">Medium</option>
-                <option value="sm">Small</option>
+            <select>
+                <option value="large">Large</option>
+                <option value="medium">Medium</option>
+                <option value="small">Small</option>
             </select>
-            <button> Test</button>
         </div>
     </header>
     <iframe src="/frame.html" title="Demo"></iframe>
     <script>
-        
+//Variables
+        const iframe = document.getElementsByTagName("iframe")[0]; //Get iframe object
+        const large = document.getElementsByTagName("select")[0]; //Get large option object
+        const largeSpace = document.getElementsByTagName("select")[1]; //Get large space option object
+        const medium = document.getElementsByTagName("select")[2]; //Get medium option object
+        const mediumSpace = document.getElementsByTagName("select")[3]; //Get medium space option object
+        const small = document.getElementsByTagName("select")[4]; //Get small option object
+        const smallSpace = document.getElementsByTagName("select")[5]; //Get small space option object
+        const screenSize = document.getElementsByTagName("select")[6]; //Get screen size option object
+        const options = document.querySelectorAll("select"); //Get all options objects
+        const cell = document.getElementById("cell"); //Get cell object
+        const textbox = document.getElementById("textbox"); //Get textbox object
+
         function exe(){
-            iframe = document.getElementsByTagName("iframe")[0];
-            ss = document.getElementsByTagName("select")[6].value;
-            console.log(ss);
-            iframe.className= ss;
-            iframe.className= ss;
-            w = iframe.offsetWidth;
-            h = iframe.offsetHeight;
-            lg = document.getElementsByTagName("select")[0].value;
-            lgs = document.getElementsByTagName("select")[1].value;
-            md = document.getElementsByTagName("select")[2].value;
-            mds = document.getElementsByTagName("select")[3].value;
-            sm = document.getElementsByTagName("select")[4].value;
-            sms = document.getElementsByTagName("select")[5].value;
-            value = lg + lgs + ' ' + md + mds + ' ' + sm + sms;
-            iframe.contentWindow.document.getElementById("cell").className= value;
-            if(w < 768){
-                size = "Small";
-            }else if(w < 1200){
-                size = "Medium";
-            }else{
-                size = "Large";
-            }
-            iframe.contentWindow.document.getElementById("textbox").innerHTML = '<b>Screen size: </b>' + size + ' <b>Value classes:</b> class="' + value + '"';
-            console.log('Screen size ' + size + ' ' + w + 'px witdh x ' + h + 'px height');
+            ss = screenSize.value; //Get value from option screen size
+            iframe.className= ss; //iFrame size by class value
+            lg = large.value; //Get value from option large 
+            lgs = largeSpace.value; //Get value from option large space
+            md = medium.value; //Get value from option medium
+            mds = mediumSpace.value; //Get value from option medium space
+            sm = small.value; //Get value from option small
+            sms = smallSpace.value; //Get value from option small space
+            val = lg + lgs + ' ' + md + mds + ' ' + sm + sms; //Class value for cell -- val 1
+            val2 = '<b>Screen size: </b>' + ss + ' <b>Value classes:</b> class="' + val + '"'; //Value of text to print on textbox -- val 2
+            iframe.contentWindow.cell.className= val; //Insert val 1
+            iframe.contentWindow.textbox.innerHTML = val2; //Insert val 2
             
-        }
-        window.addEventListener('load', function() {
+        };
+//Events
+        window.addEventListener('load', function() { //Execute function when load page
             exe();
         });
-        document.getElementsByTagName("button")[0].addEventListener('click', function() {
+        options.forEach(elem => elem.addEventListener('change', function() { //Execute function when change option value
             exe();
-        });
+        }));
         
 
     </script>
