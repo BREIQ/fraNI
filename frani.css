@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* CSS Document - Frani 1.0 - September 2020
+/* CSS Document - Frani 2.0
 
 /* 1-General */
 /* 1.1-Window */
@@ -14,38 +14,28 @@
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 	background:none;
-}
-html,body{
 	overflow-x:hidden !important;
 	overflow-y:auto;
 }
-
 /* 2-Grid */
 /* 2.1-Containers */
 .frani{
 	margin-right:auto;
 	margin-left:auto;
+	max-width: 1800px;
 }
-@media(min-width: 1800px){
-	.frani{
-		width:1800px;
-	}
-}
-.line{
+.line, .line10{
 	clear:both;
-	overflow-y:auto;
-	overflow-x:hidden;
 }
-
-/* 2.2-Cells */
-/* 2.2.1-Cells Global Propierties */
-.line [class*="lg"], .line [class*="md"], .line [class*="sm"]{
+/* 2.2-Cells Global */
+.line [class*="lg"], .line [class*="md"], .line [class*="sm"], .line10 [class*="lg"], .line10 [class*="md"], .line10 [class*="sm"]{
 	position:relative;
 	min-height:1px;
 	float:left;
 	display: none !important;
 }
-/* 2.2.2-Large Cells */
+/* 2.3-Cells Frani */
+/* 2.3.1-Large Cells */
 @media(min-width: 1200px){
 	.line [class*="lg"]{
 		display: block !important;
@@ -86,7 +76,7 @@ html,body{
 	.line [class*="12lg"]{
 		width:100%;
 	}
-/* 2.2.4-Large Cells Spaces */
+/* 2.3.2-Large Cells Spaces */
 	.line [class*="lg-1"]{
 		margin-left:8.33333333%;
 	}
@@ -121,7 +111,7 @@ html,body{
 		margin-left:91.66666666%;
 	}
 }
-/* 2.2.4-Medium Cells */
+/* 2.3.3-Medium Cells */
 @media(min-width: 768px) and (max-width: 1199px){
 	.line [class*="md"]{
 		display: block !important;
@@ -162,7 +152,7 @@ html,body{
 	.line [class*="12md"]{
 		width:100%;
 	}
-/* 2.2.5-Medium Cells Spaces */
+/* 2.3.4-Medium Cells Spaces */
 	.line [class*="md-1"]{
 		margin-left:8.33333333%;
 	}
@@ -197,7 +187,7 @@ html,body{
 		margin-left:91.66666666%;
 	}
 }
-/* 2.2.6-Small Cells */
+/* 2.3.5-Small Cells */
 @media(max-width: 767px){
 	.line [class*="sm"]{
 		display: block !important;
@@ -238,7 +228,7 @@ html,body{
 	.line [class*="12sm"]{
 		width:100%;
 	}
-/* 2.2.5-Small Cells Spaces */
+/* 2.3.6-Small Cells Spaces */
 	.line [class*="sm-1"]{
 		margin-left:8.33333333%;
 	}
@@ -273,3 +263,273 @@ html,body{
 		margin-left:91.66666666%;
 	}
 }
+/* 2.4-Cells Frani 10 */
+/* 2.4.1-Large Cells */
+@media(min-width: 1200px){
+	.line-10 [class*="lg"]{
+		display: block !important;
+	}
+	.line-10 [class*="1lg"]{
+		width: 10%;
+	}
+	.line-10 [class*="2lg"]{
+		width: 20%;
+	}
+	.line-10 [class*="3lg"]{
+		width: 30%;
+	}
+	.line-10 [class*="4lg"]{
+		width: 40%;
+	}
+	.line-10 [class*="5lg"]{
+		width: 50%;
+	}
+	.line-10 [class*="6lg"]{
+		width: 60%;
+	}
+	.line-10 [class*="7lg"]{
+		width: 70%;
+	}
+	.line-10 [class*="8lg"]{
+		width: 80%;
+	}
+	.line-10 [class*="9lg"]{
+		width: 90%;
+	}
+	.line-10 [class*="10lg"]{
+		width: 100%;
+	}
+/* 2.4.2-Large Cells Spaces */
+	.line-10 [class*="lg-1"]{
+		margin-left: 10%;
+	}
+	.line-10 [class*="lg-2"]{
+		margin-left: 20%;
+	}
+	.line-10 [class*="lg-3"]{
+		margin-left: 30%;
+	}
+	.line-10 [class*="lg-4"]{
+		margin-left: 40%;
+	}
+	.line-10 [class*="lg-5"]{
+		margin-left: 50%;
+	}
+	.line-10 [class*="lg-6"]{
+		margin-left: 60%;
+	}
+	.line-10 [class*="lg-7"]{
+		margin-left: 70%;
+	}
+	.line-10 [class*="lg-8"]{
+		margin-left: 80%;
+	}
+	.line-10 [class*="lg-9"]{
+		margin-left: 90%;
+	}
+}
+/* 2.4.3-Medium Cells */
+@media(min-width: 768px) and (max-width: 1199px){
+	.line-10 [class*="md"]{
+		display: block !important;
+	}
+	.line-10 [class*="1md"]{
+		width: 10%;
+	}
+	.line-10 [class*="2md"]{
+		width: 20%;
+	}
+	.line-10 [class*="3md"]{
+		width: 30%;
+	}
+	.line-10 [class*="4md"]{
+		width: 40%;
+	}
+	.line-10 [class*="5md"]{
+		width: 50%;
+	}
+	.line-10 [class*="6md"]{
+		width: 60%;
+	}
+	.line-10 [class*="7md"]{
+		width: 70%;
+	}
+	.line-10 [class*="8md"]{
+		width: 80%;
+	}
+	.line-10 [class*="9md"]{
+		width: 90%;
+	}
+	.line-10 [class*="10md"]{
+    width: 100%;
+	}
+/* 2.4.4-Medium Cells Spaces */
+	.line-10 [class*="md-1"]{
+		margin-left: 10%;
+	}
+	.line-10 [class*="md-2"]{
+		margin-left: 20%;
+	}
+	.line-10 [class*="md-3"]{
+		margin-left: 30%;
+	}
+	.line-10 [class*="md-4"]{
+		margin-left: 40%;
+	}
+	.line-10 [class*="md-5"]{
+		margin-left: 50%;
+	}
+	.line-10 [class*="md-6"]{
+		margin-left: 60%;
+	}
+	.line-10 [class*="md-7"]{
+		margin-left: 70%;
+	}
+	.line-10 [class*="md-8"]{
+		margin-left: 80%;
+	}
+	.line-10 [class*="md-9"]{
+		margin-left: 90%;
+	}
+}
+/* 2.4.5-Small Cells */
+@media(max-width: 767px){
+	.line-10 [class*="sm"]{
+		display: block !important;
+	}
+	.line-10 [class*="1sm"]{
+		width: 10%;
+	}
+	.line-10 [class*="2sm"]{
+		width: 20%;
+	}
+	.line-10 [class*="3sm"]{
+		width: 30%;
+	}
+	.line-10 [class*="4sm"]{
+		width: 40%;
+	}
+	.line-10 [class*="5sm"]{
+		width: 50%;
+	}
+	.line-10 [class*="6sm"]{
+		width: 60%;
+	}
+	.line-10 [class*="7sm"]{
+		width: 70%;
+	}
+	.line-10 [class*="8sm"]{
+		width: 80%;
+	}
+	.line-10 [class*="9sm"]{
+		width: 90%;
+	}
+	.line-10 [class*="10sm"]{
+		width: 100%;
+	}
+/* 2.4.6-Small Cells Spaces */
+	.line-10 [class*="sm-1"]{
+		margin-left: 10%;
+	}
+	.line-10 [class*="sm-2"]{
+		margin-left: 20%;
+	}
+	.line-10 [class*="sm-3"]{
+		margin-left: 30%;
+	}
+	.line-10 [class*="sm-4"]{
+		margin-left: 40%;
+	}
+	.line-10 [class*="sm-5"]{
+		margin-left: 50%;
+	}
+	.line-10 [class*="sm-6"]{
+		margin-left: 60%;
+	}
+	.line-10 [class*="sm-7"]{
+		margin-left: 70%;
+	}
+	.line-10 [class*="sm-8"]{
+		margin-left: 80%;
+	}
+	.line-10 [class*="sm-9"]{
+		margin-left: 90%;
+	}
+}
+/* 3-Format */
+/* 3.1-Cells Padding */
+.frani div.padding{
+	padding: 10px;
+}
+.frani div.padding-y{
+	padding: 10px 0;
+}
+.frani div.padding-x{
+	padding: 0 10px;
+}
+/* 3.2-Display */
+.block{
+    display: block;
+}
+.inline-block{
+    display: inline-block;
+}
+.inline{
+    display: inline;
+}
+.flex{
+    display: -webkit-box;
+    display: -webkit-flex;
+	display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+/* 3.3-Text Format */
+/* 3.3.1-Text Align */
+.center{
+    text-align: center;
+}
+ .justify{
+    text-align: justify;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+/* 3.3.2-Text Format */
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+/* 3.3.3-Link format */
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+/* 4-Media Querys */
+/* Landscape */
+@media(orientation: landscape){}
+/* Portrait */
+@media(orientation: portrait){}
+/* Large Size */
+@media(min-width: 1200px){}
+/* Medium Size */
+@media(min-width: 768px) and (max-width: 1199px){}
+/* Small Size */
+@media(max-width: 767px) {}
+/* Landscape Position and Large Size */
+@media(orientation: landscape) and (min-width: 1200px){}
+/* Display Landscape Position and Mediun Size */
+@media(orientation: landscape) and (min-width: 768px) and (max-width: 1199px){}
+/* Display Landscape Position and Small Size */
+@media(orientation: landscape) and (max-width: 767px){}
+/* Display Portrait Position and Large Size */
+@media(orientation: portrait) and (min-width: 1200px){}
+/* Display Portrait Position and Medium Size */
+@media(orientation: portrait) and (min-width: 768px) and (max-width: 1199px){}
+/* Display Portrait Position and Small Size */
+@media(orientation: portrait) and (max-width: 767px){}
