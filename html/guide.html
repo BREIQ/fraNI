@@ -1,15 +1,10 @@
 <!DOCTYPE HTML><html>
 <head>
-<title>fraNI | Guide</title>
+<title>Frani | Guide</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@media print{
-    *{
-        color: #000 !important;
-    }
-}
 html, body{
     width: 100%;
     min-height: 100%;
@@ -23,7 +18,6 @@ html, body{
 header{
     margin: auto;
     padding-top: 25px;
-    max-width: 800px;;
     text-align: center;
 }
 h1{
@@ -43,31 +37,64 @@ h1 span:last-child{
 article{
     display: none;
     padding: 15px;
-    max-width: 800px;
-    margin: 0 auto 150px auto;
+    max-width: 816px;
+    margin: 0 auto;
 }
 article.active{
     display: block;
 }
 p{
     padding: 0 40px;
+    text-align: justify;
+}
+p.quote{
+    display: block;
+    background-color: #222;
+    padding: 15px 40px;
+    border: 1px #FFF solid;
 }
 h2{
+    margin-top: 50px;
     padding: 0 15px 15px 40px;
     border: solid #777;
     border-width: 0 0 2px 0;
     font-weight: normal;
 }
+a:visited{
+    color: inherit;
+}
+@media print{
+    @page{
+        size: letter portrait;
+    }
+    *{
+        background-color: #FFF !important;
+        color: #000 !important;
+    }
+    html, body, main, article{
+        margin: auto;
+        width: 210mm;
+    }
+    p.quote{
+        border: 1px #000 solid;
+    }
+}
 </style>
 </head>
 <body>
+<header>
+    <h1>.<span>fra</span>ni<span>{}</span></h1>
+</header>
 <main>
-    <header>
-        <h1>.<span>fra</span>ni<span>{}</span></h1>
-    </header>
     <article class="es active">
-        <h2>Que es frani</h2>
-        <p>Frani es una plantilla CSS diseñada para crear sitios responsivos. Su filosofia radica en ser muy simple y con una sintaxis sencilla.</p>
+        <p>Frani es una hoja de estilo CSS elaborada para la construcción de sitios web responsivos. Su filosofía radica en ser minimalista y con una sintaxis simple y de fácil aprendizaje, que es altamente flexible y de rápida implementación.</p>
+        <h2>Instalación</h2>
+        <p>La instalación es tan simple como colocar la siguiente etiqueta en la cabeza de tu documento html:</P>
+        <P class="quote">&lt;link rel="stylesheet" src="https://frani.beq.mx/frani.min.css"&gt</P>
+        <P>Otra opcion es descargar el archico CSS de <a href="https://frani.beq.mx/frani.min.css" target="_blank">AQUÍ</a>. Siempre recomendamos utilizar frani como la primer hoja de estilo en tu documento.</p>
+        <h2>Como se usa</h2>
+        <p>Frani esta dividido en dos partes, la cuadricula y el formato. La parte del formato solo son unas pocas opciones que ayudan a dar formato al texto y contenedores. Le recomendamos verificar la documentación de esa sección para conocer todas las opciones.</p>
+        <P></P>
     </article>
 </main>
 </body>
