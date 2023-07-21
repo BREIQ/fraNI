@@ -19,10 +19,19 @@
 }
 /* 2-Grid */
 /* 2.1-Containers */
-.frani{
+[class*="frani"]{
 	margin-right:auto;
 	margin-left:auto;
-	max-width: 1800px;
+	max-width: 1800px !important;
+}
+.frani-1500{
+	max-width: 1500px !important;
+}
+.frani-1200{
+	max-width: 1200px !important;
+}
+.frani-900{
+	max-width: 900px !important;
 }
 .line, .line10{
 	clear:both;
@@ -458,13 +467,13 @@
 }
 /* 3-Format */
 /* 3.1-Cells Padding */
-.frani div.padding{
+[class*="frani"] div.padding{
 	padding: 10px;
 }
-.frani div.padding-y{
+[class*="frani"] div.padding-y{
 	padding: 10px 0;
 }
-.frani div.padding-x{
+[class*="frani"] div.padding-x{
 	padding: 0 10px;
 }
 /* 3.2-Display */
