@@ -185,15 +185,17 @@ label{
         const sm = options[4]; //Get small option object
         const sms = options[5]; //Get small space option object
         const ss = options[6]; //Get screen size option object
-        const cell = document.getElementById("cell"); //Get cell object
-        const textbox = document.getElementById("textbox"); //Get textbox object
+        var cell = 0; //Create cell var
+        var textbox = 0; //Create textbox var
 //Functions
         function exe(){
+            cell =  iframe.contentWindow.document.getElementById("cell"); //Get cell object
+            textbox =  iframe.contentWindow.document.getElementById("textbox"); //Get textbox object
             iframe.className= ss.value; //iFrame size by class value
             val_0 = lg.value + lgs.value + ' ' + md.value + mds.value + ' ' + sm.value + sms.value; //Class value for cell
             val_1 = '<b>Screen size: </b>' + ss.value + ' <b>Value classes:</b> class="' + val_0 + '"'; //Value of text to print on textbox
-            iframe.contentWindow.cell.className= val_0; //Insert val 0
-            iframe.contentWindow.textbox.innerHTML = val_1; //Insert val 1
+            cell.className= val_0; //Insert val 0
+            textbox.innerHTML = val_1; //Insert val 1
         };
 //Events
         window.addEventListener('load', function() { //Execute function when load page
