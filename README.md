@@ -39,13 +39,26 @@ fraNI gives you the flexibility to choose your mathematical base depending on th
 
 ---
 
+### 🏗️ Container Tiers
+fraNI provides flexible containers to control the maximum width of your layout. Use the class that best fits your design:
+
+| Class | Max Width | Best for... |
+| :--- | :--- | :--- |
+| `[class*="frani"]` | 1800px | Ultra-wide cinematic layouts. |
+| `.frani-1500` | 1500px | High-resolution modern displays. |
+| `.frani-1200` | 1200px | Standard desktop layouts. |
+| `.frani-900` | 900px | Focused, narrow content (like blogs). |
+
+> **Note:** All containers are automatically centered using `margin: auto` and include a `clear:both` fix via `.line` and `.line10` classes to prevent layout collapses.
+
+---
 
 ## ☕ Support Breiq
 
 If you find this grid logic innovative or useful for your projects, consider supporting my work! Every contribution helps me keep developing tools and scripts.
 
 ### Donate via PayPal:
-https://www.paypal.com/paypalme/breiq
+[![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-003087?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/paypalme/breiq)
 
 ---
 **Minimalism in code. Efficiency in design. Built by Breiq.**
